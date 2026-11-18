@@ -1,3 +1,25 @@
+# Plain static site: no build step. Everything in site/ is published as is.
 [build]
-  publish = "."
-  command = "bash fetch-photos.sh"
+  publish = "site"
+
+# Send the old netlify.app address to the real domain.
+[[redirects]]
+  from = "https://richmond-turnpike-before-after.netlify.app/*"
+  to = "https://richmondturnpike.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Access-Control-Allow-Origin = "*"
