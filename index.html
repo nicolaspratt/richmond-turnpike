@@ -4,207 +4,148 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Richmond Turnpike: Before &amp; After</title>
-<meta name="description" content="Sixteen views of the house on Richmond Turnpike, before and after.">
+<meta name="description" content="The house on Richmond Turnpike, before and after.">
 <meta property="og:title" content="Richmond Turnpike: Before &amp; After">
-<meta property="og:description" content="Sixteen views of the house on Richmond Turnpike, before and after.">
+<meta property="og:description" content="The house on Richmond Turnpike, before and after.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/01-after.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#f3efe4; --ink:#1f2a22; --muted:#5d665c; --green:#2f4a3a; --rule:#cfc8b6; --clay:#a4532f;
-    --display:"Fraunces", Georgia, "Times New Roman", serif;
-    --mono:"Spline Sans Mono", ui-monospace, Menlo, monospace;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--display);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  .mast{text-align:center;padding:72px 0 44px;border-bottom:1px solid var(--rule)}
-  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);margin:0 0 18px}
-  h1{font-weight:400;font-variation-settings:"SOFT" 100;font-size:clamp(44px,8.5vw,104px);line-height:.95;letter-spacing:-.02em;margin:0;color:var(--green)}
-  h1 em{display:block;font-style:italic;font-weight:300;font-size:.5em;letter-spacing:0;margin-top:.35em;color:var(--ink)}
-  .lede{max-width:34em;margin:26px auto 0;color:var(--muted);font-size:19px}
-  .pair{padding:52px 0 8px}
-  .pair header{display:flex;align-items:baseline;gap:16px;margin-bottom:16px;border-bottom:1px solid var(--rule);padding-bottom:10px}
-  .num{font-family:var(--mono);font-size:13px;color:var(--clay);letter-spacing:.1em}
-  h2{font-weight:500;font-size:clamp(24px,3.4vw,34px);line-height:1.1;margin:0;letter-spacing:-.01em}
-  .frames{display:flex;gap:14px;align-items:flex-start}
-  figure{margin:0;min-width:0}
-  figure.before{flex:1.3333 1 0}
-  figure.after{flex:1.5015 1 0}
-  figure button{display:block;width:100%;padding:0;border:0;background:#ddd6c4;cursor:zoom-in;overflow:hidden;border-radius:3px}
-  figure img{display:block;width:100%;height:auto;transition:transform .5s ease}
-  figure button:hover img{transform:scale(1.025)}
-  figure button:focus-visible, .lb button:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
-  figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:9px;color:var(--muted)}
-  figure.after figcaption{color:var(--green);font-weight:500}
-  footer{margin-top:64px;border-top:1px solid var(--rule);padding:28px 0 56px;text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-  @media (max-width:640px){
-    .mast{padding:48px 0 32px}
-    .frames{flex-direction:column;gap:18px}
-    figure.before,figure.after{flex:none;width:100%}
-    .pair{padding-top:40px}
-  }
-  .lb{position:fixed;inset:0;z-index:10;background:rgba(18,24,20,.96);display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 16px 20px}
-  .lb.open{display:flex}
-  .lb img{max-width:min(1100px,100%);max-height:calc(100vh - 150px);width:auto;height:auto;border-radius:3px}
-  .lb p{color:#eee8d8;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:16px 0 0;text-align:center}
-  .lb button{position:absolute;background:none;border:0;color:#eee8d8;font-family:var(--display);font-size:40px;line-height:1;cursor:pointer;padding:12px 18px}
-  .lb .x{top:6px;right:8px}
-  .lb .prev{left:4px;top:50%;transform:translateY(-50%)}
-  .lb .next{right:4px;top:50%;transform:translateY(-50%)}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}figure img{transition:none}}
+  body { margin: 0; background: #fff; color: #16181a; font-family: "Archivo", "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 72px 24px 96px; }
+  h1 { margin: 0 0 44px; font-size: clamp(48px, 9.2vw, 96px); font-weight: 800; font-stretch: 62%; line-height: 0.9; letter-spacing: -0.01em; }
+  .heads, .pair { display: flex; gap: 12px; }
+  .heads { position: sticky; top: 0; background: #fff; padding: 10px 0 8px; border-bottom: 3px solid #16181a; font-size: clamp(20px, 3vw, 30px); font-weight: 600; }
+  .heads span:first-child, .b { flex: 1.3333 1 0; }
+  .heads span:last-child, .a { flex: 1.5 1 0; }
+  section { margin-top: 44px; }
+  .pair { align-items: flex-start; }
+  .pair img { display: block; min-width: 0; width: 0; height: auto; }
+  h2 { margin: 10px 0 0; font-size: 17px; font-weight: 500; color: #4a4f55; }
+  @media (max-width: 600px) { .wrap { padding: 40px 14px 64px; } h1 { margin-bottom: 28px; } .heads, .pair { gap: 6px; } section { margin-top: 28px; } h2 { font-size: 15px; } }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="mast">
-    <p class="eyebrow">Sixteen views, then and now</p>
-    <h1>Richmond Turnpike <em>Before &amp; After</em></h1>
-    <p class="lede">The same house, room by room. Each pair shows a space as it was on the left and as it is now on the right. Select any photo to see it larger.</p>
-  </div>
+  <h1>Richmond Turnpike</h1>
+  <div class="heads"><span>Before</span><span>After</span></div>
   <main>
-    <section class="pair" id="p01">
-      <header><span class="num">01</span><h2>Front of House</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="0" aria-label="Enlarge Front of House, before"><img src="images/01-before.jpg" width="640" height="480" alt="Front of House, before"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="1" aria-label="Enlarge Front of House, after"><img src="images/01-after.jpg" width="1024" height="682" alt="Front of House, after"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/01-before.jpg" width="640" height="480" alt="Front of house, before">
+        <img class="a" src="images/01-after.jpg" width="1024" height="682" alt="Front of house, after">
       </div>
+      <h2>Front of house</h2>
     </section>
-    <section class="pair" id="p02">
-      <header><span class="num">02</span><h2>Powder Room</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="2" aria-label="Enlarge Powder Room, before"><img src="images/02-before.jpg" width="640" height="480" alt="Powder Room, before"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="3" aria-label="Enlarge Powder Room, after"><img src="images/02-after.jpg" width="1024" height="682" alt="Powder Room, after"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/02-before.jpg" width="640" height="480" alt="Powder room, before">
+        <img class="a" src="images/02-after.jpg" width="1024" height="682" alt="Powder room, after">
       </div>
+      <h2>Powder room</h2>
     </section>
-    <section class="pair" id="p03">
-      <header><span class="num">03</span><h2>Dining Room</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="4" aria-label="Enlarge Dining Room, before"><img src="images/03-before.jpg" width="640" height="480" alt="Dining Room, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="5" aria-label="Enlarge Dining Room, after"><img src="images/03-after.jpg" width="1024" height="682" alt="Dining Room, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/03-before.jpg" width="640" height="480" alt="Dining room, before" loading="lazy">
+        <img class="a" src="images/03-after.jpg" width="1024" height="682" alt="Dining room, after" loading="lazy">
       </div>
+      <h2>Dining room</h2>
     </section>
-    <section class="pair" id="p04">
-      <header><span class="num">04</span><h2>Kitchen</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="6" aria-label="Enlarge Kitchen, before"><img src="images/04-before.jpg" width="640" height="480" alt="Kitchen, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="7" aria-label="Enlarge Kitchen, after"><img src="images/04-after.jpg" width="1024" height="682" alt="Kitchen, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/04-before.jpg" width="640" height="480" alt="Kitchen, before" loading="lazy">
+        <img class="a" src="images/04-after.jpg" width="1024" height="682" alt="Kitchen, after" loading="lazy">
       </div>
+      <h2>Kitchen</h2>
     </section>
-    <section class="pair" id="p05">
-      <header><span class="num">05</span><h2>The Field</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="8" aria-label="Enlarge The Field, before"><img src="images/05-before.jpg" width="640" height="480" alt="The Field, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="9" aria-label="Enlarge The Field, after"><img src="images/05-after.jpg" width="1024" height="682" alt="The Field, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/05-before.jpg" width="640" height="480" alt="The field, before" loading="lazy">
+        <img class="a" src="images/05-after.jpg" width="1024" height="682" alt="The field, after" loading="lazy">
       </div>
+      <h2>The field</h2>
     </section>
-    <section class="pair" id="p06">
-      <header><span class="num">06</span><h2>Study</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="10" aria-label="Enlarge Study, before"><img src="images/06-before.jpg" width="640" height="480" alt="Study, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="11" aria-label="Enlarge Study, after"><img src="images/06-after.jpg" width="1024" height="682" alt="Study, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/06-before.jpg" width="640" height="480" alt="Study, before" loading="lazy">
+        <img class="a" src="images/06-after.jpg" width="1024" height="682" alt="Study, after" loading="lazy">
       </div>
+      <h2>Study</h2>
     </section>
-    <section class="pair" id="p07">
-      <header><span class="num">07</span><h2>Bedroom</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="12" aria-label="Enlarge Bedroom, before"><img src="images/07-before.jpg" width="640" height="480" alt="Bedroom, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="13" aria-label="Enlarge Bedroom, after"><img src="images/07-after.jpg" width="1024" height="682" alt="Bedroom, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/07-before.jpg" width="640" height="480" alt="Bedroom, before" loading="lazy">
+        <img class="a" src="images/07-after.jpg" width="1024" height="682" alt="Bedroom, after" loading="lazy">
       </div>
+      <h2>Bedroom</h2>
     </section>
-    <section class="pair" id="p08">
-      <header><span class="num">08</span><h2>Living Room</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="14" aria-label="Enlarge Living Room, before"><img src="images/08-before.jpg" width="640" height="480" alt="Living Room, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="15" aria-label="Enlarge Living Room, after"><img src="images/08-after.jpg" width="1024" height="682" alt="Living Room, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/08-before.jpg" width="640" height="480" alt="Living room, before" loading="lazy">
+        <img class="a" src="images/08-after.jpg" width="1024" height="682" alt="Living room, after" loading="lazy">
       </div>
+      <h2>Living room</h2>
     </section>
-    <section class="pair" id="p09">
-      <header><span class="num">09</span><h2>Hall Bath</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="16" aria-label="Enlarge Hall Bath, before"><img src="images/09-before.jpg" width="640" height="480" alt="Hall Bath, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="17" aria-label="Enlarge Hall Bath, after"><img src="images/09-after.jpg" width="1024" height="682" alt="Hall Bath, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/09-before.jpg" width="640" height="480" alt="Hall bath, before" loading="lazy">
+        <img class="a" src="images/09-after.jpg" width="1024" height="682" alt="Hall bath, after" loading="lazy">
       </div>
+      <h2>Hall bath</h2>
     </section>
-    <section class="pair" id="p10">
-      <header><span class="num">10</span><h2>Attic Office</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="18" aria-label="Enlarge Attic Office, before"><img src="images/10-before.jpg" width="640" height="480" alt="Attic Office, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="19" aria-label="Enlarge Attic Office, after"><img src="images/10-after.jpg" width="1024" height="682" alt="Attic Office, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/10-before.jpg" width="640" height="480" alt="Attic office, before" loading="lazy">
+        <img class="a" src="images/10-after.jpg" width="1024" height="682" alt="Attic office, after" loading="lazy">
       </div>
+      <h2>Attic office</h2>
     </section>
-    <section class="pair" id="p11">
-      <header><span class="num">11</span><h2>Upstairs Bath</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="20" aria-label="Enlarge Upstairs Bath, before"><img src="images/11-before.jpg" width="640" height="480" alt="Upstairs Bath, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="21" aria-label="Enlarge Upstairs Bath, after"><img src="images/11-after.jpg" width="1024" height="682" alt="Upstairs Bath, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/11-before.jpg" width="640" height="480" alt="Upstairs bath, before" loading="lazy">
+        <img class="a" src="images/11-after.jpg" width="1024" height="682" alt="Upstairs bath, after" loading="lazy">
       </div>
+      <h2>Upstairs bath</h2>
     </section>
-    <section class="pair" id="p12">
-      <header><span class="num">12</span><h2>The Pasture</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="22" aria-label="Enlarge The Pasture, before"><img src="images/12-before.jpg" width="640" height="480" alt="The Pasture, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="23" aria-label="Enlarge The Pasture, after"><img src="images/12-after.jpg" width="1024" height="682" alt="The Pasture, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/12-before.jpg" width="640" height="480" alt="The pasture, before" loading="lazy">
+        <img class="a" src="images/12-after.jpg" width="1024" height="682" alt="The pasture, after" loading="lazy">
       </div>
+      <h2>The pasture</h2>
     </section>
-    <section class="pair" id="p13">
-      <header><span class="num">13</span><h2>Sitting Room</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="24" aria-label="Enlarge Sitting Room, before"><img src="images/13-before.jpg" width="640" height="480" alt="Sitting Room, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="25" aria-label="Enlarge Sitting Room, after"><img src="images/13-after.jpg" width="1024" height="682" alt="Sitting Room, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/13-before.jpg" width="640" height="480" alt="Sitting room, before" loading="lazy">
+        <img class="a" src="images/13-after.jpg" width="1024" height="682" alt="Sitting room, after" loading="lazy">
       </div>
+      <h2>Sitting room</h2>
     </section>
-    <section class="pair" id="p14">
-      <header><span class="num">14</span><h2>Back of House</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="26" aria-label="Enlarge Back of House, before"><img src="images/14-before.jpg" width="640" height="480" alt="Back of House, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="27" aria-label="Enlarge Back of House, after"><img src="images/14-after.jpg" width="1024" height="682" alt="Back of House, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/14-before.jpg" width="640" height="480" alt="Back of house, before" loading="lazy">
+        <img class="a" src="images/14-after.jpg" width="1024" height="682" alt="Back of house, after" loading="lazy">
       </div>
+      <h2>Back of house</h2>
     </section>
-    <section class="pair" id="p15">
-      <header><span class="num">15</span><h2>Guest Bedroom</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="28" aria-label="Enlarge Guest Bedroom, before"><img src="images/15-before.jpg" width="640" height="480" alt="Guest Bedroom, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="29" aria-label="Enlarge Guest Bedroom, after"><img src="images/15-after.jpg" width="1024" height="682" alt="Guest Bedroom, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/15-before.jpg" width="640" height="480" alt="Guest bedroom, before" loading="lazy">
+        <img class="a" src="images/15-after.jpg" width="1024" height="682" alt="Guest bedroom, after" loading="lazy">
       </div>
+      <h2>Guest bedroom</h2>
     </section>
-    <section class="pair" id="p16">
-      <header><span class="num">16</span><h2>Library</h2></header>
-      <div class="frames">
-        <figure class="before"><button type="button" data-i="30" aria-label="Enlarge Library, before"><img src="images/16-before.jpg" width="640" height="480" alt="Library, before" loading="lazy"></button><figcaption>Before</figcaption></figure>
-        <figure class="after"><button type="button" data-i="31" aria-label="Enlarge Library, after"><img src="images/16-after.jpg" width="1024" height="682" alt="Library, after" loading="lazy"></button><figcaption>After</figcaption></figure>
+    <section>
+      <div class="pair">
+        <img class="b" src="images/16-before.jpg" width="640" height="480" alt="Library, before" loading="lazy">
+        <img class="a" src="images/16-after.jpg" width="1024" height="682" alt="Library, after" loading="lazy">
       </div>
+      <h2>Library</h2>
     </section>
   </main>
-  <footer>Richmond Turnpike &middot; Before &amp; After</footer>
 </div>
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="x" type="button" aria-label="Close">&times;</button>
-  <button class="prev" type="button" aria-label="Previous photo">&lsaquo;</button>
-  <img alt="">
-  <p></p>
-  <button class="next" type="button" aria-label="Next photo">&rsaquo;</button>
-</div>
-<script>
-(function(){
-  var btns=[].slice.call(document.querySelectorAll('figure button')), lb=document.getElementById('lb'),
-      im=lb.querySelector('img'), cap=lb.querySelector('p'), cur=0, last=null;
-  function show(i){cur=(i+btns.length)%btns.length;var t=btns[cur].querySelector('img');im.src=t.getAttribute('src');im.alt=t.alt;cap.textContent=t.alt.replace(', ',' · ');}
-  function open(i){last=document.activeElement;show(i);lb.classList.add('open');document.body.style.overflow='hidden';lb.querySelector('.x').focus();}
-  function close(){lb.classList.remove('open');document.body.style.overflow='';if(last)last.focus();}
-  btns.forEach(function(b,i){b.addEventListener('click',function(){open(i);});});
-  lb.querySelector('.x').addEventListener('click',close);
-  lb.querySelector('.prev').addEventListener('click',function(){show(cur-1);});
-  lb.querySelector('.next').addEventListener('click',function(){show(cur+1);});
-  lb.addEventListener('click',function(e){if(e.target===lb)close();});
-  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;
-    if(e.key==='Escape')close();else if(e.key==='ArrowLeft')show(cur-1);else if(e.key==='ArrowRight')show(cur+1);});
-})();
-</script>
 </body>
 </html>
