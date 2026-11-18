@@ -19,12 +19,12 @@
   h1 { margin: 0 0 44px; font-size: clamp(48px, 9.2vw, 96px); font-weight: 800; font-stretch: 62%; line-height: 0.9; letter-spacing: -0.01em; }
   .heads, .pair { display: flex; gap: 12px; }
   .heads { position: sticky; top: 0; background: #fff; padding: 10px 0 8px; border-bottom: 3px solid #16181a; font-size: clamp(20px, 3vw, 30px); font-weight: 600; }
-  .heads span:first-child, .b { flex: 1.3333 1 0; }
-  .heads span:last-child, .a { flex: 1.5 1 0; }
+  .heads span, .pair img { flex: 1 1 0; }
   section { margin-top: 44px; }
   .pair { align-items: flex-start; }
-  .pair img { display: block; min-width: 0; width: 0; height: auto; }
+  .pair img { display: block; min-width: 0; width: 0; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
   h2 { margin: 10px 0 0; font-size: 17px; font-weight: 500; color: #4a4f55; }
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid #d5d7da; font-size: 14px; color: #4a4f55; }
   @media (max-width: 600px) { .wrap { padding: 40px 14px 64px; } h1 { margin-bottom: 28px; } .heads, .pair { gap: 6px; } section { margin-top: 28px; } h2 { font-size: 15px; } }
 </style>
 </head>
@@ -35,117 +35,118 @@
   <main>
     <section>
       <div class="pair">
-        <img class="b" src="images/01-before.jpg" width="640" height="480" alt="Front of house, before">
+        <img class="b" src="images/01-before.jpg" width="640" height="426" alt="Front of house, before">
         <img class="a" src="images/01-after.jpg" width="1024" height="682" alt="Front of house, after">
       </div>
       <h2>Front of house</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/02-before.jpg" width="640" height="480" alt="Powder room, before">
+        <img class="b" src="images/02-before.jpg" width="640" height="426" alt="Powder room, before">
         <img class="a" src="images/02-after.jpg" width="1024" height="682" alt="Powder room, after">
       </div>
       <h2>Powder room</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/03-before.jpg" width="640" height="480" alt="Dining room, before" loading="lazy">
+        <img class="b" src="images/03-before.jpg" width="640" height="426" alt="Dining room, before" loading="lazy">
         <img class="a" src="images/03-after.jpg" width="1024" height="682" alt="Dining room, after" loading="lazy">
       </div>
       <h2>Dining room</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/04-before.jpg" width="640" height="480" alt="Kitchen, before" loading="lazy">
+        <img class="b" src="images/04-before.jpg" width="640" height="426" alt="Kitchen, before" loading="lazy">
         <img class="a" src="images/04-after.jpg" width="1024" height="682" alt="Kitchen, after" loading="lazy">
       </div>
       <h2>Kitchen</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/05-before.jpg" width="640" height="480" alt="The field, before" loading="lazy">
+        <img class="b" src="images/05-before.jpg" width="640" height="426" alt="The field, before" loading="lazy">
         <img class="a" src="images/05-after.jpg" width="1024" height="682" alt="The field, after" loading="lazy">
       </div>
       <h2>The field</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/06-before.jpg" width="640" height="480" alt="Study, before" loading="lazy">
+        <img class="b" src="images/06-before.jpg" width="640" height="426" alt="Study, before" loading="lazy">
         <img class="a" src="images/06-after.jpg" width="1024" height="682" alt="Study, after" loading="lazy">
       </div>
       <h2>Study</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/07-before.jpg" width="640" height="480" alt="Bedroom, before" loading="lazy">
+        <img class="b" src="images/07-before.jpg" width="640" height="426" alt="Bedroom, before" loading="lazy">
         <img class="a" src="images/07-after.jpg" width="1024" height="682" alt="Bedroom, after" loading="lazy">
       </div>
       <h2>Bedroom</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/08-before.jpg" width="640" height="480" alt="Living room, before" loading="lazy">
+        <img class="b" src="images/08-before.jpg" width="640" height="426" alt="Living room, before" loading="lazy">
         <img class="a" src="images/08-after.jpg" width="1024" height="682" alt="Living room, after" loading="lazy">
       </div>
       <h2>Living room</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/09-before.jpg" width="640" height="480" alt="Hall bath, before" loading="lazy">
+        <img class="b" src="images/09-before.jpg" width="640" height="426" alt="Hall bath, before" loading="lazy">
         <img class="a" src="images/09-after.jpg" width="1024" height="682" alt="Hall bath, after" loading="lazy">
       </div>
       <h2>Hall bath</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/10-before.jpg" width="640" height="480" alt="Attic office, before" loading="lazy">
+        <img class="b" src="images/10-before.jpg" width="640" height="426" alt="Attic office, before" loading="lazy">
         <img class="a" src="images/10-after.jpg" width="1024" height="682" alt="Attic office, after" loading="lazy">
       </div>
       <h2>Attic office</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/11-before.jpg" width="640" height="480" alt="Upstairs bath, before" loading="lazy">
+        <img class="b" src="images/11-before.jpg" width="640" height="426" alt="Upstairs bath, before" loading="lazy">
         <img class="a" src="images/11-after.jpg" width="1024" height="682" alt="Upstairs bath, after" loading="lazy">
       </div>
       <h2>Upstairs bath</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/12-before.jpg" width="640" height="480" alt="The pasture, before" loading="lazy">
+        <img class="b" src="images/12-before.jpg" width="640" height="426" alt="The pasture, before" loading="lazy">
         <img class="a" src="images/12-after.jpg" width="1024" height="682" alt="The pasture, after" loading="lazy">
       </div>
       <h2>The pasture</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/13-before.jpg" width="640" height="480" alt="Sitting room, before" loading="lazy">
+        <img class="b" src="images/13-before.jpg" width="640" height="426" alt="Sitting room, before" loading="lazy">
         <img class="a" src="images/13-after.jpg" width="1024" height="682" alt="Sitting room, after" loading="lazy">
       </div>
       <h2>Sitting room</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/14-before.jpg" width="640" height="480" alt="Back of house, before" loading="lazy">
+        <img class="b" src="images/14-before.jpg" width="640" height="426" alt="Back of house, before" loading="lazy">
         <img class="a" src="images/14-after.jpg" width="1024" height="682" alt="Back of house, after" loading="lazy">
       </div>
       <h2>Back of house</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/15-before.jpg" width="640" height="480" alt="Guest bedroom, before" loading="lazy">
+        <img class="b" src="images/15-before.jpg" width="640" height="426" alt="Guest bedroom, before" loading="lazy">
         <img class="a" src="images/15-after.jpg" width="1024" height="682" alt="Guest bedroom, after" loading="lazy">
       </div>
       <h2>Guest bedroom</h2>
     </section>
     <section>
       <div class="pair">
-        <img class="b" src="images/16-before.jpg" width="640" height="480" alt="Library, before" loading="lazy">
+        <img class="b" src="images/16-before.jpg" width="640" height="426" alt="Library, before" loading="lazy">
         <img class="a" src="images/16-after.jpg" width="1024" height="682" alt="Library, after" loading="lazy">
       </div>
       <h2>Library</h2>
     </section>
   </main>
+  <footer>Before photos &copy; 2014 MRIS. After photos &copy; CVRMLS.</footer>
 </div>
 </body>
 </html>
